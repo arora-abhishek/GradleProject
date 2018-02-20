@@ -36,8 +36,8 @@ sourceSets {
 
 4. find how to what is an uberjar. Make changes so you can use commons lang3 StringUtil in your jar. Make this uber jar executable. The output should be text but that should be using the StringUtils class of commons lang3
 
-add dependency compile 'org.apache.commons:commons-lang3:3.6'
 
+add dependency compile 'org.apache.commons:commons-lang3:3.6'
 add task uberjar as below
 
 task uberjar(type: Jar, dependsOn: [':compileJava', ':processResources']) {
